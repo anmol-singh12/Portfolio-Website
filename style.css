@@ -1,0 +1,648 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    background-color:antiquewhite;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    margin-top: 12px;
+    /* background-color: rgb(17, 226, 195); */
+}
+
+.img img {
+    width: 65px;
+    height: 65px;
+    margin-left: 35px;
+    margin-top: 7px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding-right: 120px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+li {
+    padding: 30px;
+    position: relative;
+}
+
+h2 {
+    font-family: sans-serif;
+    color: #000000;
+    font-size: 20px;
+    position: relative;
+    right: 415px;
+}
+
+li:hover {
+    text-decoration: underline 2px;
+    text-underline-offset: 6px;
+    text-underline-position: inherit;
+    cursor: pointer;
+    color: #6B21A8;
+}
+
+a {
+    text-decoration: none;
+    margin-top: 29px;
+}
+
+button {
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    background: none;
+    background-color: #8a1ce4;
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    width: 71px;
+    border-radius: 10px;
+}
+
+.login {
+    position: absolute;
+    right: 6%;
+}
+
+.Signup {
+    position: absolute;
+    right: 2%;
+}
+
+button:hover {
+    background-color: #6B21A8;
+    cursor: pointer;
+}
+
+.main h1 {
+    position: absolute;
+    top: 35%;
+    padding-left: 250px;
+    font-family: poppins, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+b {
+    color: rgb(126, 34, 206);
+}
+
+.main p {
+    position: absolute;
+    top: 41%;
+    padding-left: 255px;
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main span {
+    color: rgb(126, 34, 206);
+}
+
+.cover img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+    left: 61%;
+    top: 22%;
+    
+}
+
+/* Media Quries to make responsive */
+@media (max-width:1300px) {
+    nav h2 {
+        padding-left: 400px;
+    }
+
+    ul {
+        padding-right: 200px;
+    }
+
+    .login {
+        margin-right: 30px;
+    }
+
+    .Signup {
+        margin-left: 30px;
+    }
+
+    .main h1 {
+        /* padding-left: 200px; */
+        margin-left: -190px;
+    }
+
+    .main p {
+        margin-left: -190px;
+    }
+
+    .main .cover img {
+        padding-right: 500px;
+    }
+}
+
+@media (max-width:1900px) {
+    nav h2 {
+        padding-left: 200px;
+    }
+}
+
+@media (max-width:1145px) {
+    nav h2 {
+        padding-left: 200px;
+    }
+}
+
+@media (max-width:1450px) {
+    nav h2 {
+        padding-left: 400px;
+    }
+}
+
+@media (max-width:1750px) {
+    .login {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width:1150px) {
+    button {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:990px) {
+    nav img {
+        position: relative;
+        left: 200px;
+    }
+
+    nav h2 {
+        position: absolute;
+        right: 75%;
+    }
+
+    ul {
+        margin-left: 65%;
+    }
+
+    .Signup {
+        position: absolute;
+        left: 90%;
+    }
+
+    .login {
+        position: absolute;
+        left: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    .Signup {
+        position: absolute;
+        left: 98%;
+    }
+
+    .login {
+        position: absolute;
+        left: 109%;
+    }
+
+    .main img {
+        position: absolute;
+        top: 80%;
+    }
+}
+
+@media (max-width:1450px) {
+    nav h2 {
+        margin-left: -190px;
+    }
+}
+
+@media (max-width:1480px) {
+    nav h2 {
+        position: absolute;
+        left: 130px;
+    }
+}
+
+@media (max-width:1300px) {
+    nav h2 {
+        position: absolute;
+        left: 55px;
+    }
+
+    nav img {
+        position: relative;
+        left: 50px;
+    }
+
+    .main h1 {
+        margin-left: 40px;
+    }
+
+    .main p {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width:1200px) {
+    nav h2 {
+        position: absolute;
+        left: -80px;
+    }
+
+    nav img {
+        position: absolute;
+        left: 45px;
+        top: 0;
+    }
+
+    ul {
+        margin-left: 500px;
+    }
+}
+
+@media (max-width:1290px) {
+    .cover img {
+        margin-left: -100px;
+    }
+}
+
+@media (max-width:1115px) {
+    nav h2 {
+        position: absolute;
+        left: -100px;
+    }
+}
+
+@media (max-width:1060px) {
+    nav h2 {
+        position: absolute;
+        left: -146px;
+    }
+
+}
+
+@media (max-width:1366px) {
+    nav h2 {
+        position: absolute;
+        left: -60px;
+    }
+
+    nav img {
+        margin-right: 700px;
+    }
+
+    ul {
+        position: relative;
+        right: 100px;
+    }
+
+    .cover img {
+        transform: scale(0.8);
+    }
+
+    .main h1 {
+        position: absolute;
+        left: -120px;
+    }
+
+    .main p {
+        position: absolute;
+        left: -120px;
+        padding-top: 15px;
+    }
+
+}
+
+@media (max-width:1145px) {
+    .main h1 {
+        margin-left: -50px;
+    }
+
+    .main p {
+        margin-left: -50px;
+    }
+}
+
+@media (max-width:1010px) {
+    ul {
+        margin-right: -100px;
+    }
+
+    .Signup {
+        position: absolute;
+        right: 8px;
+    }
+}
+
+@media (max-width:990px) {
+    .main h1 {
+        margin-left: -120px;
+    }
+
+    .main p {
+        margin-left: -120px;
+    }
+
+    .text {
+        position: relative;
+        top: 150px;
+        left: 400px;
+    }
+
+    .text:nth-child(2) {
+        position: relative;
+        top: 50px;
+    }
+
+    .cover img {
+        position: absolute;
+        left: 500px;
+        top: 340px;
+    }
+
+    .login {
+        margin-left: 260px;
+    }
+
+    .Signup {
+        margin-left: 260px;
+    }
+
+    ul {
+        margin-left: 1100px;
+    }
+
+}
+
+@media (max-width:800px) {
+    .Signup {
+        margin-left: 200px;
+    }
+
+    .login {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width:700px) {
+    .Signup {
+        margin-left: 240px;
+    }
+
+    .login {
+        margin-left: 250px;
+    }
+
+    .text {
+        margin-left: -87px;
+        margin-top: 40px;
+    }
+    .text p{
+        padding-top: 80px;
+    }
+    .cover img{
+        position: absolute;
+        top:60%;
+        left: 420px;
+    }
+}
+@media (max-width:630px){
+    .login{
+        margin-left: 300px;
+    }
+    .Signup{
+        margin-left: 280px;
+    }
+    .text{
+        transform: scale(1.2)
+    }
+    .text p{
+        padding-left: 263px;
+    }
+    .cover img{
+        transform: scale(1.21);
+        position: relative;
+        top: 350px;
+    }
+}
+@media (max-width:560px){
+    .login{
+        margin-left: 350px;
+    }
+    .Signup{
+        margin-left: 330px;
+    }
+    .text h1{
+        transform: scale(1.3)
+    }
+    .text p{
+        transform: scale(1.29);
+    }
+    .text h1{
+        margin-left: -180px;
+    }
+    .text p{
+        margin-left: -168px;
+    }
+    .cover img{
+        transform: scale(1.2);
+        position: relative;
+        top: 400px;
+    }
+}
+@media (max-width:500px){
+    .login{
+        margin-left: 370px;
+    }
+    .Signup{
+        margin-left: 350px;
+    }
+    .text{
+        transform: scale(1.2);
+        /* margin-right: -550px; */
+    }
+    .text h1{
+        margin-left: -170px;
+        
+    }
+    .text p{
+        margin-left: -170px;
+    }
+    .cover img{
+        position: relative;
+        top: 400px;
+        left: 400px;
+        transform: scale(1.2);
+    }
+    @media (max-width:400px){
+        .login{
+            margin-left: 440px;
+        }
+        .Signup{
+            margin-left: 400px;
+        }
+        .text h1{
+            margin-left: -200px;
+        }
+        .text p{
+            margin-left: -213px;
+        }
+        .cover img{
+            position: relative;
+            left: 350px;
+            transform: scale(1.3);
+        }
+    }
+}
+.buttonhero button{
+    position: absolute;
+    top: 51%;
+    left: 13.2%;
+    width: 139px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+.btn-cv:hover{
+    background-color: #2d2a2a;
+}
+.login a{
+    list-style: none;
+    color: white;
+}
+.Signup a{
+    list-style: none;
+    color: white;
+}
+@media (max-width:350px){
+    .btn-cv{
+        margin-top: 940px;
+        margin-left: 390px;
+        transform: scale(2);
+    }
+}
+@media (max-width:400px){
+    .btn-cv{
+        margin-top: 940px;
+        margin-left: 390px;
+        transform: scale(2);
+    }
+}
+@media (max-width:500px){
+    .btn-cv{
+        margin-top: 940px;
+        margin-left: 410px;
+        transform: scale(2);
+    }
+}
+@media (max-width:600px){
+    .btn-cv{
+        margin-top: 830px;
+        margin-left: 430px;
+        transform: scale(2);
+    }
+}
+@media (max-width:700px){
+    .btn-cv{
+        margin-top: 630px;
+        margin-left: 410px;
+        transform: scale(2);
+    }
+}
+@media (max-width:615px){
+    .btn-cv{
+        margin-top: 800px;
+        margin-left: 410px;
+        transform: scale(2);
+    }
+}
+@media (max-width:800px){
+    .btn-cv{
+        margin-top: 500px;
+        margin-left: 470px;
+        transform: scale(2);
+    }
+}
+@media (max-width:900px){
+    .btn-cv{
+        margin-top: 500px;
+        margin-left: 470px;
+        transform: scale(2);
+    }
+}
+@media (max-width:990px){
+    .btn-cv{
+        margin-top: 500px;
+        margin-left: 400px;
+        transform: scale(2);
+    }
+}
+@media (max-width:1050px){
+    .btn-cv{
+        margin-left: -50px;
+    }
+}
+@media (max-width:1100px){
+    .btn-cv{
+        margin-left: -70px;
+    }
+}
+@media (max-width:1145px){
+    .btn-cv{
+        margin-left: -70px;
+    }
+}
+@media (max-width:1360px){
+    .btn-cv{
+        margin-left: -50px;
+    }
+}
+@media (max-width:1400px){
+    .btn-cv{
+        margin-left: 65px;
+    }
+}
+@media (max-width:1500px){
+    .btn-cv{
+        margin-left: 51px;
+    }
+}
+@media (max-width:1600px){
+    .btn-cv{
+        margin-left: 40px;
+    }
+}
+@media (max-width:1700px){
+    .btn-cv{
+        margin-left: 25px;
+    }
+}
+@media (max-width:1800px){
+    .btn-cv{
+        transform: translate(-400%);
+    }
+}
+
+
+
+
